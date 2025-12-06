@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Puzzle 160-bit Hunter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{font-family:system-ui;background:#111;color:#0f0;margin:2rem}
+    button{padding:1rem 2rem;font-size:1.2rem;background:#080;border:0;cursor:pointer}
+    pre{background:#000;padding:1rem;overflow:auto;white-space:pre-wrap}
+  </style>
+</head>
+<body>
+  <h1>Puzzle 160-bit Hunter</h1>
+  <p>Range : 1 – 65 535 (0x0001 – 0xFFFF) – ~6,7 BTC à récupérer</p>
+  <button id="go">Lancer la chasse</button>
+  <pre id="out"></pre>
+  <!-- dépendances -->
+  <script src="https://cdn.jsdelivr.net/npm/elliptic@6.5.4/lib/elliptic.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bs58@4.0.1/index.min.js"></script>
+  <script src="hunter.js"></script>
+</body>
+</html>
