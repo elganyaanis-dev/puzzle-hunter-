@@ -1,4 +1,10 @@
-// Adresses du puzzle 160-bit (compressed)
+// vérifie que les CDN sont bien là
+if (typeof elliptic === 'undefined' || typeof CryptoJS === 'undefined' || typeof bs58 === 'undefined') {
+  alert("CDN non chargés → vérifie ta connexion.");
+  throw new Error("Libs manquantes");
+}
+
+// adresses du puzzle 160-bit (compressed)
 const TARGETS = [
   "1BgGZ9tcN4rm9KBzDn7KprQz87SZ26SAMH","1CUNEBjYrCn2y1S9vPj341vCgN5kBhfv6o","19D2JjZfVh1w6e1m888k2jRriZkq5TJp5d",
   "1E57T4zdkV3kTef32fVq1AZ8j2o6R6G6v6","1L9zZXv1f1L9zZXv1f1L9zZXv1f1L9zZXv","12ib7dApVFvg82TXKycWBNpN8kFyiAN1dr",
